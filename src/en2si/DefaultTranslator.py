@@ -78,3 +78,4 @@ class DefaultTranslator:
         path_dest = path_src.replace(src_pattern, dest_pattern)
         File(path_dest).write_lines(lines_dest)
         log.info(f'Wrote {path_dest}')
+        return path_dest
